@@ -1,4 +1,7 @@
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SocialContact from '../../../social-contact/SocialContact';
+import FooterContact from './components/FooterContact';
 import './Style.css';
 const Footer = () => {
   return (
@@ -92,27 +95,21 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 footer-links">
               <h4>Interface</h4> <hr className="p-2" />
               <ul>
-                <li>
-                  <i className="bi bi-envelope">&nbsp;</i>
-                  <a href="/" style={{ cursor: 'pointer' }}>
-                    info@sunitlimited.com
-                  </a>
-                </li>
-                <li>
-                  <i className="bi bi-phone">&nbsp;</i>
-                  <a href="/" style={{ cursor: 'pointer' }}>
-                    +88 01749 60 81 71
-                  </a>
-                </li>
-                <li>
-                  <i className="bi bi-house">&nbsp;</i>
-                  <a href="/" style={{ cursor: 'pointer' }}>
-                    <p style={{ paddingLeft: '5px' }}>
-                      37 Miyapara, Rani Bazar Road, <br /> Ghoramara, Boalia,
-                      Rajshahi-6100
-                    </p>
-                  </a>
-                </li>
+                <FooterContact
+                  footerLink="mailto:info@abccompany.com"
+                  footerIcon={<FontAwesomeIcon icon={faEnvelope} />}
+                  footerContactEntity="info@abccompany.com"
+                />
+                <FooterContact
+                  footerLink="tel:8801760111222"
+                  footerIcon={<i className="bi bi-phone"></i>}
+                  footerContactEntity="88 01760 111 222"
+                />
+                <FooterContact
+                  footerLink="#"
+                  footerIcon={<i className="bi bi-house pt-3">&nbsp;</i>}
+                  footerContactEntity="37 Saskatoon Road, North Saskatoon, Saskatchewan, Canada."
+                />
               </ul>
               <div className="social-links mt-3">
                 <SocialContact
