@@ -1,5 +1,6 @@
 {
-  "extends": ["react-app", "react-app/jest", "react-hooks", "prettier"],
+  "extends": ["react-app", "react-app/jest", "prettier"],
+  "plugins": ["react-hooks"],
   "rules": {
     "semi": "warn",
     "react-hooks/rules-of-hooks": "error",
