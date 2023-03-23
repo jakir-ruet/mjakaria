@@ -1,7 +1,7 @@
 import React from 'react';
 import Topbar from './components/hoc/website/topbar/Topbar';
+import Navbar from './components/hoc/website/navbar/components/EachNavbar';
 import Footer from './components/hoc/website/footer/Footer';
-import Navbar from './components/hoc/website/navbar/Navbar';
 
 function App() {
   return (
