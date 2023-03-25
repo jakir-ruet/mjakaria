@@ -1,19 +1,16 @@
-import { Link } from 'react-router-dom';
 import logo from '../../../../../assets/logo.png';
+import { Link } from 'react-router-dom';
 const Brand = () => {
   return (
-    <div className="navbar bg-body-tertiary">
-      <Link className="navbar-brand" to={'/'}>
-        <img
-          src={logo}
-          width="45"
-          height="45"
-          className="d-inline-block align-text-top"
-          alt="logo"
-        />
-        <h1 className="logo">Menubar</h1>
-      </Link>
-    </div>
+    <Link
+      to={'/'}
+      className="font-semibold text-2xl cursor-pointer flex items-center font-serif text-gray-500"
+    >
+      <span className="flex text-2xl text-indigo-600 mr-1 pt-0">
+        <img src={logo} height={45} width={45} alt="logo" />
+        menubar
+      </span>
+    </Link>
   );
 };
 export default Brand;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Topbar from './components/hoc/website/topbar/Topbar';
-import Navbar from './components/hoc/website/navbar/components/EachNavbar';
+import Navbar from './components/hoc/website/navbar/Navbar';
 import Footer from './components/hoc/website/footer/Footer';
 
 function App() {
