@@ -2,15 +2,12 @@ import logo from '../../../../../assets/logo.png';
 import { Link } from 'react-router-dom';
 const Brand = () => {
   return (
-    <Link
-      to={'/'}
-      className="font-semibold text-2xl cursor-pointer flex items-center font-serif text-gray-500"
-    >
-      <span className="flex text-2xl text-indigo-600 mr-1 pt-0">
+    <div className="font-bold text-2xl cursor-pointer items-center font-[Poppins] text-gray-800">
+      <Link to={'/'} className=" flex text-3xl text-indigo-600 mr-1 pt-2">
         <img src={logo} height={45} width={45} alt="logo" />
-        menubar
-      </span>
-    </Link>
+        <span>NABILGROUP</span>
+      </Link>
+    </div>
   );
 };
 export default Brand;

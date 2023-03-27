@@ -1,19 +1,26 @@
 import { useState } from 'react';
 import NavItems from './components/NavItems';
+import Brand from './components/Brand';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   let [menuOpen, setMenuOpen] = useState(true);
   return (
     <div className="shadow-md w-full sticky top-0 left-0">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
-          <span className="text-3xl text-indigo-600 mr-1 pt-2"></span>
-          NABIL GROUP
-        </div>
+      <div className="md:flex items-center justify-between bg-white py-2 md:px-10 px-7">
+        <Brand />
         <div
           onClick={() => setMenuOpen(!menuOpen)}
           className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
         >
-          <p>{menuOpen ? 'Open' : 'Close'}</p>
+          <div>
+            {menuOpen ? (
+              <FontAwesomeIcon icon={faBars} />
+            ) : (
+              <FontAwesomeIcon icon={faClose} />
+            )}
+          </div>
+          {/* <p>{menuOpen ? 'Open' : 'Close'}</p> */}
         </div>
         <ul
           style={{ transition: '1s' }}
