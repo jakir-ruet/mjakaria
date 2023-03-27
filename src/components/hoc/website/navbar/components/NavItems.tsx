@@ -1,9 +1,10 @@
-const NavItems = [
-  { title: 'Home', path: '/' },
-  { title: 'About', path: '/about' },
-  { title: 'Technologies', path: '/technologies' },
-  { title: 'Services', path: '/services' },
-  { title: 'Resume', path: '/resume' },
-  { title: 'Contact', path: '/contact' },
+import Items from '../../../../types/Items';
+let NavItems: Items[] = [
+  { title: 'Home', href: '/' },
+  { title: 'About', href: '/about' },
+  { title: 'Technologies', href: '/technologies' },
+  { title: 'Services', href: '/services' },
+  { title: 'Resume', href: '/resume' },
+  { title: 'Contact', href: '/contact' },
 ];
 export default NavItems;
